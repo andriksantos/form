@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Copyright&copy; 2017 Page created by -Andrick Santos- All rights reserved">
+  	<meta name="description" content="examen andrick santos">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>JavaScript</title>
+	<link rel="icon" href="img/as.png" type="image/icon">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/funciones.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		
+	<h1 id="eti" class="form"><strong>Formulario de Registro</strong></h1>
+	<form name="fvalida">
+		<table>
+			<tr>
+				<td>Nombre: </td>
+				<td><input type="text" name="nombre" size="30" maxlength="100"></td>
+			</tr>
+			<tr>
+				<td>Edad: </td>
+				<td><input type="text" name="edad" size="3" maxlength="3"></td>
+			</tr>
+			<tr>
+				<td>Interés: </td>
+				<td>
+					<select name="interes">
+						<option value="elegir">Elegir</option>
+						<option name="Comercial">Contacto comercial</option>
+						<option name="Clientes">Atención al cliente</option>
+						<option name="Proveedores">Contacto proveedores</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" value="Enviar" onclick="valida_envia()"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center" id="etiqueta">fecha</td>
+			</tr>
+			<tr>
+				<td>Color:</td>
+				<td>
+					<input type="radio"
+						name ="radSize"
+						id="colorazul"
+						value = "azul"
+						checked = "checked"
+						onclick="color()" >
+					<label for "colorazul">Azul</label>
+
+					<input type="radio"
+						name ="radSize"
+						id="colorrojo"
+						value = "rojo"
+						onclick="color()" >
+					<label for "colorrojo">Rojo</label>
+
+					<input type="radio"
+						name ="radSize"
+						id="colorverde"
+						value = "verde"
+						onclick="color()" >
+					<label for "colorverde">Verde</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Fecha Incial: </td>
+				<td><input type="text" id="f1" size="30" maxlength="10"></td>
+			</tr>
+			<tr>
+				<td>Fecha Final: </td>
+				<td><input type="text" id="f2" size="30" maxlength="10"></td>
+			</tr>
+			<tr>
+				<td>Días: </td>
+				<td align="center" id="diitas">Dias</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" value="calcular" onclick="Mostrardias(f1,f2)"></td>
+			</tr>
+			<tr>
+				<td>Monto:
+				<td><input type="text" id="f3" size="6" maxlength="9"> Lps</td>
+			</td>
+			</tr>
+			<tr>
+				<td>Dias: </td>
+				<td>
+					<select name="Dias" onclick="Mostrar_mensaje()">
+						<option value="Dias">Dias</option>
+						<option name="1">1  - 15</option>
+						<option name="2">16 - 30</option>
+						<option name="3">31 - 60</option>
+						<option name="4">61 - 90</option>
+						<option name="5">91 - adelante</option>
+					</select>
+				</td>
+				</td>
+			</tr>
+			<tr>
+				<td>Mensaje:</td>
+				<td align="center" id="msjs">Mensaje</td>
+			</tr>
+			<tr>
+				<td>Interes:</td>
+				<td><input type="text" name="intereses" size="1" maxlength="2">%</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" value="calcular interes" onclick=""></td>
+			</tr>
+
+		</table>
+	</form>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<footer>
+		<div class="arsm" id="copyright">
+			Copyright&copy; 2017 - Página creada por 
+			<a target="_blank" href="https://andricksantos.github.io">-
+			Andrick Santos</a> - Todos los derechos reservados</div>
+			</div>
+		</div>
+	</footer>
+<!--	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-103804510-1', 'auto');
+		ga('send', 'pageview');
+	</script> -->
+	<script type="text/javascript">
+		document.oncontextmenu = function(){return false;}
+	</script>
+</body>
+</html>
