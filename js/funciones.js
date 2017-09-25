@@ -1,3 +1,7 @@
+	var mostrarValor = function(x){
+        document.getElementById('msjs').value = x;
+    }
+
 //funciones
 function Mostrardias(fx,fy){
 	//var fecha1= "12/06/2008";
@@ -110,8 +114,6 @@ function calcularinteres(numero1, numero2) {
 	//document.getElementsByName("resultado").innerHTML; 
 }
 
-function mostrarValor() {
-	var mostrarValor = function(x){
-        document.getElementById('msjs').value = x;
-}
-}
+
+
+
