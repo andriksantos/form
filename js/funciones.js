@@ -94,16 +94,24 @@ function valida_envia(){
 	//Mostrardias();
 }
 
-/*function Mostrar_mensaje() {
-	var 1 = Justo a tiempo,
-		2 = tiempo recargado,
-		3 = Tiempo sobrepasado,
-		4 = Tiempo alo,
-		5 = Tiempo elavado;
+/*function selectlist() {
 
-	document.getElementsByName("Dias").innerHTML = msj;
+	var list = document.getElementById("list");
+	document.getElementById("msjs").innerHTML = list.options[list.selectedIndex].text;
+}
+*/
+
+function calcularinteres(numero1, numero2) {
+	var numero1 = document.getElementById("f3").value;
+	var numero2 = document.getElementById("f4").value;
+
+	var resultado = numero1 * numero2;
+	alert (resultado);
+	//document.getElementsByName("resultado").innerHTML; 
 }
 
-function Mostrar_mensaje() {
-	var 1 = document.g
-}*/
+function mostrarValor() {
+	var mostrarValor = function(x){
+        document.getElementById('msjs').value = x;
+}
+}

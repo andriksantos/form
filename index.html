@@ -92,31 +92,28 @@
 			<tr>
 				<td>Dias: </td>
 				<td>
-					<select name="Dias" onclick="Mostrar_mensaje()">
-						<option value="Dias">Dias</option>
-						<option name="1">1  - 15</option>
-						<option name="2">16 - 30</option>
-						<option name="3">31 - 60</option>
-						<option name="4">61 - 90</option>
-						<option name="5">91 - adelante</option>
-					</select>
-				</td>
-				</td>
+				     <select name="elejir_dia" onchange="mostrarValor(this.value);">
+			            <option value="Dias">Dias</option>
+			            <option value="Justo a tiempo">1  - 15</option>
+			            <option value="Tiempo recargado">16 - 30</option>
+			            <option value="Tiempo sobrepasado">31 - 60</option>
+			            <option value="Tiempo alto">61 - 90</option>
+			            <option value="Tiempo elevado">91 - adelante</option>
+			        </select>
+			        <input type="text" id="msjs" value="" />
+    		</td>
 			</tr>
-			<tr>
-				<td>Mensaje:</td>
-				<td align="center" id="msjs">Mensaje</td>
-			</tr>
+			
 			<tr>
 				<td>Interes:</td>
-				<td><input type="text" name="intereses" size="1" maxlength="2">%</td>
+				<td><input type="text" id="f4" name="intereses" size="1" maxlength="5">%</td>
 			</tr>
 			<tr>
 				<td>Resultado</td>
-				<td><input type="text" name="Resultado" size="6" maxlength="10"></td>
+				<td><input type="text" name="Resultado" size="6" maxlength="10"> Lps</td>
 			</tr>
 			<tr>
-				<td colspan="2" align="center"><input type="button" value="calcular interes" onclick=""></td>
+				<td colspan="2" align="center"><input type="button" value="calcular interes" onclick="calcularinteres();"></td>
 			</tr>
 
 		</table>
@@ -149,6 +146,8 @@
 		</div>
 	</footer>
 	<script>
+
+
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
