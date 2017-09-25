@@ -93,14 +93,14 @@
 				<td>Dias: </td>
 				<td>
 				     <select name="elejir_dia" onchange="mostrarValor(this.value);">
-			            <option value="Dias">Dias</option>
-			            <option value="Justo a tiempo">1  - 15</option>
-			            <option value="Tiempo recargado">16 - 30</option>
-			            <option value="Tiempo sobrepasado">31 - 60</option>
-			            <option value="Tiempo alto">61 - 90</option>
-			            <option value="Tiempo elevado">91 - adelante</option>
+			            <option value="" value="Dias">Elija los dias</option>
+			            <option  value="Justo a tiempo">1  - 15</option>
+			            <option  value="Tiempo recargado">16 - 30</option>
+			            <option  value="Tiempo sobrepasado">31 - 60</option>
+			            <option  value="Tiempo alto">61 - 90</option>
+			            <option  value="Tiempo elevado">91 - adelante</option>
 			        </select>
-			        <input type="text" id="msjs" value="" />
+			        <input type="text" id="msjs" value="" size="14" />
     		</td>
 			</tr>
 			
@@ -110,7 +110,7 @@
 			</tr>
 			<tr>
 				<td>Resultado</td>
-				<td><input type="text" name="Resultado" size="6" maxlength="10"> Lps</td>
+				<td><input type="text" name="resultado" size="6" maxlength="10" id="resultado"> Lps</td>
 			</tr>
 			<tr>
 				<td colspan="2" align="center"><input type="button" value="calcular interes" onclick="calcularinteres();"></td>

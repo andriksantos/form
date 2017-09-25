@@ -1,5 +1,6 @@
-	var mostrarValor = function(x){
+	var mostrarValor = function(x, y){
         document.getElementById('msjs').value = x;
+        //document.getElementsByName('interes').value = y;
     }
 
 //funciones
@@ -108,10 +109,12 @@ function valida_envia(){
 function calcularinteres(numero1, numero2) {
 	var numero1 = document.getElementById("f3").value;
 	var numero2 = document.getElementById("f4").value;
-
+	
 	var resultado = numero1 * numero2;
-	alert (resultado);
-	//document.getElementsByName("resultado").innerHTML; 
+	//alert (resultado);
+	document.getElementById("resultado").value = resultado; 
+	//document.write(resultado)
+	//console.log(resultado);
 }
 
 
