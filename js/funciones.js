@@ -1,9 +1,29 @@
-	var mostrarValor = function(x, y){
-        document.getElementById('msjs').value = x;
-        //document.getElementsByName('interes').value = y;
+//funciones
+	var mostrarValor = function(x){
+		
+		var n1 = 0.03;
+
+		document.getElementById('msjs').style.color="green";
+		document.getElementById('msjs').value = x;
+        document.getElementById('f4').value = n1;
+
+
+        var interes = document.getElementsByName("elejir_dia");
+        if (true) {}
     }
 
-//funciones
+
+function calcularinteres(numero1, numero2) {
+	var numero1 = document.getElementById("f3").value;
+	var numero2 = document.getElementById("f4").value;
+	
+	var resultado = numero1 * numero2;
+	//alert (resultado);
+	document.getElementById("resultado").value = resultado; 
+	//document.write(resultado)
+	//console.log(resultado);
+}
+
 function Mostrardias(fx,fy){
 	//var fecha1= "12/06/2008";
 	var fecha1=fx.value;
@@ -106,16 +126,6 @@ function valida_envia(){
 }
 */
 
-function calcularinteres(numero1, numero2) {
-	var numero1 = document.getElementById("f3").value;
-	var numero2 = document.getElementById("f4").value;
-	
-	var resultado = numero1 * numero2;
-	//alert (resultado);
-	document.getElementById("resultado").value = resultado; 
-	//document.write(resultado)
-	//console.log(resultado);
-}
 
 
 

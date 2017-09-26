@@ -20,7 +20,7 @@
 		<table>
 			<tr>
 				<td>Nombre: </td>
-				<td><input type="text" name="nombre" size="30" maxlength="100"></td>
+				<td><input type="text" name="nombre" size="30" maxlength="35"></td>
 			</tr>
 			<tr>
 				<td>Edad: </td>
@@ -93,12 +93,12 @@
 				<td>Dias: </td>
 				<td>
 				     <select name="elejir_dia" onchange="mostrarValor(this.value);">
-			            <option value="" value="Dias">Elija los dias</option>
-			            <option  value="Justo a tiempo">1  - 15</option>
-			            <option  value="Tiempo recargado">16 - 30</option>
-			            <option  value="Tiempo sobrepasado">31 - 60</option>
-			            <option  value="Tiempo alto">61 - 90</option>
-			            <option  value="Tiempo elevado">91 - adelante</option>
+			            <option  name="" value="" value="Dias">Elija los dias</option>
+			            <option  name="2" value="Justo a tiempo">1 - 15</option>
+			            <option  name="3" value="Tiempo recargado">16 - 30</option>
+			            <option  name="4" value="Tiempo sobrepasado">31 - 60</option>
+			            <option  id="n5" value="Tiempo alto">61 - 90</option>
+			            <option  name="6" value="Tiempo elevado">91 - adelante</option>
 			        </select>
 			        <input type="text" id="msjs" value="" size="14" />
     		</td>
