@@ -1,57 +1,4 @@
 //funciones
-	var mostrarValor = function(x){
-		
-			//document.getElementById('msjs').style.color="blue";
-		var inputMsj = document.getElementById('msjs');
-        var inputMora =  document.getElementById('f4');
-        var selecdia = document.getElementById("listaOpciones");
-
-
-       switch (selecdia) {
-		    case 0:
-		       if (selecdia.value = "Justo a tiempo") {
-        			inputMsj.value = mj2;
-        			inputMora.value = mo2;
-		        break;
-		    case 1:
-		       if (selecdia.value = "Tiempo recargado") {
-		        	inputMsj.value = mj3;
-		        	inputMora.value = mo3;
-		        break;
-		    case 2:
-		       if (selecdia.value = "Tiempo sobrepasado") {
-        			inputMsj.value = mj4;
-        			inputMora.value = mo4;
-		        break;
-		    case 3:
-		        if (selecdia.value = "Tiempo alto" ) {
-        			inputMsj.value = mj5;
-        			inputMora.value = mo5;
-		        break;
-		    case 4:
-		        if (selecdia.value = "Tiempo elevado" ) {
-        			inputMsj.value = mj6;
-        			inputMora.value = mo6; 
-		        break;
-		    case 5:
-		        console.log("se mamut")
-		        break;
-		}
-
-    }
-
-
-function calcularinteres(numero1, numero2) {
-	var numero1 = document.getElementById("f3").value;
-	var numero2 = document.getElementById("f4").value;
-	
-	var resultado = numero1 * numero2;
-	//alert (resultado);
-	document.getElementById("resultado").value = resultado; 
-	//document.write(resultado)
-	//console.log(resultado);
-}
-
 function Mostrardias(fx,fy){
 	//var fecha1= "12/06/2008";
 	var fecha1=fx.value;
@@ -72,6 +19,45 @@ function Mostrardias(fx,fy){
 	var dias= Math.floor(Dif/(1000*24*60*60));
 	
 	document.getElementById('diitas').innerHTML = dias;
+	var mora = document.getElementById("monto").value;
+
+	if (dias>=0 && dias<=15){
+document.getElementById('time').innerHTML = "Justo a tiempo"
+document.getElementById('totalMonto').innerHTML =(parseInt(mora*0.03)+parseInt(mora));
+document.getElementById('time').style.color='#0026ff';
+document.getElementById('recargo').innerHTML ="3% "
+
+return 0;
+	}
+	else if (dias>=16 && dias<=30){
+document.getElementById('time').innerHTML = "tiempo recargado"
+document.getElementById('totalMonto').innerHTML =(parseInt(mora*0.07)+parseInt(mora));
+document.getElementById('time').style.color='#ecfb00';
+document.getElementById('recargo').innerHTML ="7% "
+return 0;
+	}
+else if (dias>=31 && dias<=60){
+document.getElementById('time').innerHTML = "tiempo sobrepasado"
+document.getElementById('totalMonto').innerHTML =(parseInt(mora*0.25)+parseInt(mora));
+document.getElementById('time').style.color='#ff6800';
+document.getElementById('recargo').innerHTML ="25% "
+return 0;
+	}
+else if (dias>=61 && dias<=90){
+document.getElementById('time').innerHTML = "tiempo alto"
+document.getElementById('totalMonto').innerHTML =(parseInt(mora*0.40)+parseInt(mora));
+document.getElementById('time').style.color='#a55218';
+document.getElementById('recargo').innerHTML ="40% "
+return 0;
+	}
+else if (dias>=91){
+document.getElementById('time').innerHTML = "tiempo elevado"
+document.getElementById('totalMonto').innerHTML =(parseInt(mora*0.60)+parseInt(mora));
+document.getElementById('time').style.color='#ff0000';
+document.getElementById('recargo').innerHTML ="60% "
+return 0;
+	}
+
 }
 
 function color(){
@@ -88,7 +74,6 @@ function color(){
 	}
 
 }
-
 function validarEntero(valor){
 	//intentar converitr entero
 	//si es un número entonces no lo afecta,
@@ -146,15 +131,3 @@ function valida_envia(){
 	MostrarFecha();
 	//Mostrardias();
 }
-
-/*function selectlist() {
-
-	var list = document.getElementById("list");
-	document.getElementById("msjs").innerHTML = list.options[list.selectedIndex].text;
-}
-*/
-
-
-
-
-
